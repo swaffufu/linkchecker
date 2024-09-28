@@ -1,0 +1,72 @@
+
+
+### Create a Ticket
+POST http://localhost:3000/api/tickets
+Content-Type: application/json
+
+{
+  "email": "adamss@adam.com",
+  "category": "open",
+  "description": "System is down"
+}
+
+### Get All Tickets
+GET http://localhost:3000/api/tickets
+
+### Update a Ticket
+PUT http://localhost:3000/api/tickets/?id=1
+Content-Type: application/json
+
+{
+  "category": "Upasdsadd Issue",
+  "description": "Issue has been resolved"
+}
+
+### Delete a Ticket
+DELETE http://localhost:3000/api/tickets/?id=9
+
+### Get all users
+GET https://localhost:5003
+### Create a New Ticket
+POST https://localhost:5003/api/v1/tickets/create
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "company": {
+    "id": "1234"  // Replace with an actual company ID or omit if not needed
+  },
+  "detail": "This is a test ticket detail.",
+  "title": "Test Ticket",
+  "priority": "high",
+  "email": "johndoe@example.com",
+  "engineer": {
+    "id": "5678",  // Replace with an actual engineer ID or omit if not needed
+    "name": "Engineer Name"
+  },
+  "type": "support",
+  "createdBy": {
+    "id": "9999",  // Replace with an actual user ID or omit if not needed
+    "name": "Admin User",
+    "role": "admin",
+    "email": "admin@example.com"
+  }
+}
+
+
+
+
+
+###
+POST http://localhost:3000/api/tickets
+
+# JSON body
+{
+  "url": "facebook.com"
+}
+
+POST https://www.ipqualityscore.com/api/json/url/QTVYe6oqkEPrdLoJ1HBYUfND4aVkMpPs/facebook.com
+
+###
+
+POST http://localhost:3000/api/tickets?url=facebook.com
