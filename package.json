@@ -7,13 +7,15 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@pinia/nuxt": "^0.5.4",
     "axios": "^1.7.7",
     "flowbite": "^2.5.1",
+    "gh-pages": "^6.2.0",
     "nuxt": "^3.13.0",
     "pinia": "^2.2.2",
     "simple-datatables": "^9.1.0",
