@@ -120,12 +120,12 @@ const restartQuiz = () => {
       <div class="text-center mt-8">
         <h3 class="text-lg font-semibold">Periksa Pautan Berbahaya</h3>
         <p class="mb-4">Klik butang di bawah untuk menyemak pautan.</p>
-        <router-link
+        <NuxtLink
           to="/semak"
           class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5"
         >
           Semak Pautan
-        </router-link>
+        </NuxtLink>
       </div>
     </div>
   </section>
