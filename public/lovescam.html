@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkSelamat</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      body {
+        text-align: center;
+        font-size: 18px;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .info-box {
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        position: relative;
+      }
+
+      .info-box h3 {
+        margin-top: 0;
+        cursor: pointer;
+      }
+
+      .info-box::before {
+        content: "+";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        font-weight: bold;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        transition: transform 0.3s ease;
+      }
+
+      .info-box.active::before {
+        content: "-";
+        transform: rotate(45deg);
+      }
+
+      .info-box .content {
+        display: none;
+        margin-top: 20px;
+      }
+
+      .info-box.active .content {
+        display: block;
+      }
+
+      .info-box img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div align="left">
+      <img
+        src="image/banner.jpg"
+        alt="Banner"
+        style="width: 100%; height: auto"
+      />
+    </div>
+
+    <div class="navbar">
+      <a href="Main">Halaman Utama</a>
+      <a href="Quiz">Kuiz Phishing</a>
+      <a href="OnlineScam.html">Kenali Online Scam</a>
+      <a href="News.html">Berita</a>
+      <a href="report.html">Report</a>
+      <a href="contact.html">Pertanyaan Umum</a>
+      <a href="aboutUs.html">Tentang kami</a>
+    </div>
+
+    <div class="container">
+      <h1>Love Scam (Penipuan Cinta)</h1>
+
+      <div class="info-box">
+        <h3>Bagaimana Ia Berlaku?</h3>
+        <div class="content">
+          <p>
+            Penipu memulakan hubungan romantik dalam talian dengan mangsa,
+            menggunakan kisah peribadi palsu untuk mendapatkan simpati dan
+            meminta wang atas pelbagai alasan.
+          </p>
+        </div>
+      </div>
+
+      <h2>Maklumat Lanjut</h2>
+
+      <div class="info-box">
+        <h3>1. Objektif:</h3>
+        <div class="content">
+          <ul>
+            <li>Memanipulasi emosi mangsa untuk mendapatkan wang.</li>
+            <li>Mencuri identiti mangsa untuk melakukan penipuan lain.</li>
+            <li>
+              Memeras ugut mangsa dengan maklumat atau gambar yang memalukan.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <h3>2. Taktik Scammer:</h3>
+        <div class="content">
+          <ul>
+            <li>
+              <b>Profil Palsu:</b> Mencipta profil menarik di laman web temu
+              janji atau media sosial dengan gambar dan maklumat palsu.
+            </li>
+            <li>
+              <b>Pendekatan Agresif:</b> Menunjukkan kasih sayang yang
+              berlebihan dan cepat untuk mendapatkan kepercayaan mangsa.
+            </li>
+            <li>
+              <b>Kisah Sedih:</b> Mengarang cerita sedih atau kecemasan untuk
+              mendapatkan simpati dan meminta bantuan kewangan.
+            </li>
+            <li>
+              <b>Elak Bertemu:</b> Memberi pelbagai alasan untuk mengelak
+              bertemu secara langsung dengan mangsa.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <h3>3. Contoh:</h3>
+        <div class="content">
+          <ul>
+            <li>
+              <img src="image/love1.jpg" alt="Contoh Love Scam 1" />
+            </li>
+            <li>
+              <img src="image/love2.jpg" alt="Contoh Love Scam 2" />
+            </li>
+            <li>
+              <img src="image/love3.jpg" alt="Contoh Love Scam 3" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const infoBoxes = document.querySelectorAll(".info-box h3");
+
+      infoBoxes.forEach((header) => {
+        header.addEventListener("click", () => {
+          const infoBox = header.parentNode;
+          infoBox.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

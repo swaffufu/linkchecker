@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkSelamat - Phishing (Pancingan Data)</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      body {
+        text-align: center;
+        font-size: 18px;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+
+      .social-icons {
+        display: inline-flex;
+        justify-content: center;
+      }
+
+      .social-icon-container {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .social-icon {
+        width: 80px;
+        height: auto;
+        border-radius: 10px;
+        transition: opacity 0.3s ease;
+      }
+
+      .social-icon:hover {
+        opacity: 0.7;
+      }
+
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+      }
+
+      .info-box {
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        position: relative;
+      }
+
+      .info-box h3 {
+        margin-top: 0;
+        cursor: pointer;
+      }
+
+      .info-box::before {
+        content: "+";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        font-weight: bold;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        transition: transform 0.3s ease;
+      }
+
+      .info-box.active::before {
+        content: "-";
+        transform: rotate(45deg);
+      }
+
+      .info-box .content {
+        display: none;
+        margin-top: 20px;
+      }
+
+      .info-box.active .content {
+        display: block;
+      }
+
+      .info-box img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div align="left">
+      <img
+        src="image/banner.jpg"
+        alt="Banner"
+        style="width: 100%; height: auto"
+      />
+    </div>
+
+    <div class="navbar">
+      <a href="Main">Halaman Utama</a>
+      <a href="Quiz">Kuiz Phishing</a>
+      <a href="OnlineScam.html">Kenali Online Scam</a>
+      <a href="News.html">Berita</a>
+      <a href="report.html">Report</a>
+      <a href="contact.html">Pertanyaan Umum</a>
+      <a href="about.html">Tentang kami</a>
+    </div>
+
+    <div class="container">
+      <h1>Phishing (Pancingan Data)</h1>
+
+      <div class="info-box">
+        <h3>Bagaimana Ia Berlaku?</h3>
+        <div class="content">
+          <p>
+            Pengguna menerima emel atau mesej palsu yang kelihatan sahih
+            daripada bank atau perkhidmatan dalam talian. Mereka diarahkan ke
+            laman web tiruan yang meminta maklumat peribadi.
+          </p>
+        </div>
+      </div>
+
+      <h2>Maklumat Lanjut</h2>
+
+      <div class="info-box">
+        <h3>1. Objektif:</h3>
+        <div class="content">
+          <ul>
+            <li>
+              Mencuri data peribadi seperti nama pengguna, kata laluan, nombor
+              kad kredit, nombor keselamatan sosial, dan maklumat kewangan lain.
+            </li>
+            <li>
+              Mengambil alih akaun dalam talian mangsa (media sosial, e-mel,
+              perbankan).
+            </li>
+            <li>
+              Memasang perisian hasad (malware) pada peranti mangsa untuk
+              mencuri data atau merosakkan sistem.
+            </li>
+            <li>
+              Menipu mangsa untuk menghantar wang atau mendedahkan maklumat
+              sensitif.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <h3>2. Taktik Scammer:</h3>
+        <div class="content">
+          <ul>
+            <li>
+              <b>Emel Phishing:</b> Menghantar emel yang menyamar sebagai
+              organisasi yang dipercayai (bank, syarikat kad kredit, media
+              sosial) dan meminta mangsa mengklik pautan atau memuat turun
+              lampiran.
+            </li>
+            <li>
+              <b>Laman Web Palsu:</b> Mencipta laman web tiruan yang kelihatan
+              seperti laman web sebenar untuk menipu mangsa memasukkan maklumat
+              log masuk.
+            </li>
+            <li>
+              <b>Smishing:</b> Menghantar SMS yang mengandungi pautan atau
+              arahan untuk memperdayakan mangsa.
+            </li>
+            <li>
+              <b>Vishing:</b> Membuat panggilan telefon yang menyamar sebagai
+              pegawai bank atau pihak berkuasa untuk mendapatkan maklumat
+              peribadi.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <h3>3. Contoh:</h3>
+        <div class="content">
+          <ul>
+            <li>
+              <img src="image/phishing1.jpg" alt="Contoh Phishing 1" />
+            </li>
+            <li>
+              <img src="image/phishing2.jpg" alt="Contoh Phishing 2" />
+            </li>
+            <li>
+              <img src="image/phishing3.jpg" alt="Contoh Phishing 3" />
+            </li>
+            <li>
+              <img src="image/phishing4.jpg" alt="Contoh Phishing 4" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const infoBoxes = document.querySelectorAll(".info-box h3");
+
+      infoBoxes.forEach((header) => {
+        header.addEventListener("click", () => {
+          const infoBox = header.parentNode;
+          infoBox.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

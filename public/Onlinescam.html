@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkSelamat</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f4f4f4;
+      }
+
+      .image-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /* Adjust for responsiveness */
+        gap: 20px;
+        margin-top: 50px;
+        padding: 0 20px;
+      }
+
+      .image-container img {
+        width: 100%; /* Make images responsive */
+        max-width: 270px; /* Limit maximum width */
+        height: auto; /* Maintain aspect ratio */
+        cursor: pointer;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        transition: transform 0.2s ease;
+      }
+
+      .image-container img:hover {
+        transform: scale(1.1);
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      .nav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div align="left">
+      <img
+        src="image/banner.jpg"
+        alt="Banner"
+        style="width: 100%; height: auto"
+      />
+    </div>
+
+    <div class="nav">
+      <a href="Main">Halaman Utama</a>
+      <a href="Quiz">Kuiz Phishing</a>
+      <a href="OnlineScam.html">Kenali Online Scam</a>
+      <a href="News.html">Berita</a>
+      <a href="report.html">Report</a>
+      <a href="contact.html">Pertanyaan Umum</a>
+      <a href="about.html">Tentang kami</a>
+    </div>
+
+    <h1>Kenali Penipuan Dalam Talian</h1>
+    <h2>"Online Scam"</h2>
+    <div class="image-container">
+      <img
+        src="image/phishing.jpg"
+        alt="Phishing Scam"
+        onclick="openLink('phishing.html')"
+      />
+      <img
+        src="image/SJualBeli.jpg"
+        alt="Jual Beli Scam"
+        onclick="openLink('SjualBeli.html')"
+      />
+      <img
+        src="image/STawaranKerja.jpg"
+        alt="Job Offer Scam"
+        onclick="openLink('joboffer.html')"
+      />
+      <img
+        src="image/LoveScam.jpg"
+        alt="Love Scam"
+        onclick="openLink('lovescam.html')"
+      />
+      <img
+        src="image/PelaburanPalsu.jpg"
+        alt="Investment Scam"
+        onclick="openLink('investment.html')"
+      />
+    </div>
+
+    <script>
+      function openLink(page) {
+        window.location.href = page;
+      }
+    </script>
+  </body>
+</html>

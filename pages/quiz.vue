@@ -2,6 +2,7 @@
 import { ref } from "vue";
 import blenderImage from "~/assets/img/blender.png"; // Import the first image
 import emailImage from "~/assets/img/email.png"; // Import the second image
+import NavigationBar from '~/components/navbar.vue';
 
 const currentQuestionIndex = ref(0);
 const score = ref(0);
@@ -61,6 +62,7 @@ const restartQuiz = () => {
 </script>
 
 <template>
+  <NavigationBar />
   <section class="bg-[#22273D] text-white min-h-screen py-8 px-4 md:px-6">
     <div class="container mx-auto">
       <div
@@ -121,7 +123,7 @@ const restartQuiz = () => {
         <h3 class="text-lg font-semibold">Periksa Pautan Berbahaya</h3>
         <p class="mb-4">Klik butang di bawah untuk menyemak pautan.</p>
         <NuxtLink
-          to="/semak"
+          to="/Main"
           class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5"
         >
           Semak Pautan

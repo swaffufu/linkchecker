@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkSelamat - Scam Jual Beli (Penipuan E-Dagang)</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      body {
+        text-align: center;
+        font-size: 18px;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .info-box {
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        position: relative;
+      }
+
+      .info-box h3 {
+        margin-top: 0;
+        cursor: pointer;
+      }
+
+      .info-box::before {
+        content: "+";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        font-weight: bold;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        transition: transform 0.3s ease;
+      }
+
+      .info-box.active::before {
+        content: "-";
+        transform: rotate(45deg);
+      }
+
+      .info-box .content {
+        display: none;
+        margin-top: 20px;
+      }
+
+      .info-box.active .content {
+        display: block;
+      }
+
+      .info-box img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div align="left">
+      <img
+        src="image/banner.jpg"
+        alt="Banner"
+        style="width: 100%; height: auto"
+      />
+    </div>
+
+    <div class="navbar">
+      <a href="Main">Halaman Utama</a>
+      <a href="Quiz">Kuiz Phishing</a>
+      <a href="OnlineScam.html">Kenali Online Scam</a>
+      <a href="News.html">Berita</a>
+      <a href="report.html">Report</a>
+      <a href="contact.html">Pertanyaan Umum</a>
+      <a href="about.html">Tentang kami</a>
+    </div>
+
+    <div class="container">
+      <h1>Scam Jual Beli (Penipuan E-Dagang)</h1>
+
+      <div class="info-box">
+        <h3>Bagaimana Ia Berlaku? / How It Happens:</h3>
+        <div class="content">
+          <p>
+            Penipu menawarkan barangan atau perkhidmatan palsu melalui platform
+            e-dagang atau media sosial, tetapi tidak pernah menghantar produk
+            selepas pembayaran dibuat.
+          </p>
+          <p>
+            (Scammers offer fake goods or services via e-commerce platforms or
+            social media but never deliver the products after payment is made.)
+          </p>
+        </div>
+      </div>
+
+      <h2>Maklumat lanjut</h2>
+
+      <div class="info-box">
+        <h3>1. Objektif:</h3>
+        <div class="content">
+          <ul>
+            <li>
+              Menipu mangsa untuk membuat bayaran bagi barangan atau
+              perkhidmatan yang tidak wujud.
+            </li>
+            <li>Mencuri maklumat kad kredit atau maklumat perbankan mangsa.</li>
+            <li>Menggunakan identiti mangsa untuk melakukan penipuan lain.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <h3>2. Taktik Scammer:</h3>
+        <div class="content">
+          <ul>
+            <li>
+              <b>Iklan Palsu:</b> Menawarkan barangan dengan harga yang terlalu
+              murah atau tidak masuk akal untuk menarik perhatian mangsa.
+            </li>
+            <li>
+              <b>Profil Palsu:</b> Menggunakan profil media sosial palsu atau
+              akaun e-dagang yang baru dibuat untuk menyembunyikan identiti
+              sebenar.
+            </li>
+            <li>
+              <b>Pembayaran Luar Platform:</b> Meminta mangsa membuat bayaran di
+              luar platform e-dagang yang sah (contohnya, melalui pemindahan
+              bank terus) untuk mengelakkan perlindungan pembeli.
+            </li>
+            <li>
+              <b>Tekanan untuk Membeli:</b> Menggunakan taktik tekanan tinggi,
+              seperti mengatakan stok terhad atau tawaran akan tamat, untuk
+              mendorong mangsa membuat keputusan pembelian dengan cepat.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <h3>3. Contoh:</h3>
+        <div class="content">
+          <ul>
+            <li>
+              <img src="image/ecommerce1.jpg" alt="Contoh E-commerce Scam 1" />
+            </li>
+            <li>
+              <img src="image/ecommerce2.jpg" alt="Contoh E-commerce Scam 2" />
+            </li>
+            <li>
+              <img src="image/ecommerce3.jpg" alt="Contoh E-commerce Scam 3" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const infoBoxes = document.querySelectorAll(".info-box h3");
+
+      infoBoxes.forEach((header) => {
+        header.addEventListener("click", () => {
+          const infoBox = header.parentNode;
+          infoBox.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
